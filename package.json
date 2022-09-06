@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
-    "build": "next build",
+    "build": "next build && next export",
     "dev": "next dev",
     "lint": "next lint",
     "fix": "pretty-quick --staged",
