@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
-"build": "next build && next export && mv out/_next out/next && sed -i '' -e 's/\\/_next/\\.\\/next/g' out/**.html && mv out/index.html ./extension && rsync -va --delete-after out/next/ ./extension/next/",
+    "build": "next build && next export && mv out/_next out/next && sed -i '' -e 's/\\/_next/\\.\\/next/g' out/**.html && mv out/index.html ./extension && rsync -va --delete-after out/next/ ./extension/next/",
     "dev": "next dev",
     "lint": "next lint",
     "fix": "pretty-quick --staged",
