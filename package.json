@@ -48,6 +48,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.0",
+    "@types/chrome": "^0.0.196",
     "@types/jest": "^28.1.1",
     "@types/jest-plugin-context": "^2.9.5",
     "@types/node": "^16.0.0",
@@ -107,8 +108,21 @@
         "next.config.js",
         "tailwind.config.js"
       ],
-      "extensions": ["js", "jsx", "ts", "tsx", "json", "css", "scss"],
-      "ignore": ["node_modules", "out", ".next", ".vscode"]
+      "extensions": [
+        "js",
+        "jsx",
+        "ts",
+        "tsx",
+        "json",
+        "css",
+        "scss"
+      ],
+      "ignore": [
+        "node_modules",
+        "out",
+        ".next",
+        ".vscode"
+      ]
     }
   }
 }
