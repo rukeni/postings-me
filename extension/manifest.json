@@ -1,10 +1,18 @@
 {
-  "name": "Next Chrome",
-  "description": "Next.js Chrome Extension starter",
+  "name": "next chrome notion bookmark",
+  "description": "notion bookmark",
   "version": "0.0.1",
   "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"],
   "action": {
-    "default_title": "Next.js app",
+    "default_title": "notion bookmark title",
     "default_popup": "index.html"
   }
 }
