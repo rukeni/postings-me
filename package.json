@@ -4,7 +4,7 @@
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
     "build": "next build && next export && mv out/_next out/next && sed -i '' -e 's/\\/_next/\\.\\/next/g' out/**.html && mv out/index.html ./extension && rsync -va --delete-after out/next/ ./extension/next/",
-    "dev": "npm-watch run build",
+    "dev": "npm-watch",
     "lint": "next lint",
     "fix": "pretty-quick --staged",
     "start": "next start",
@@ -78,7 +78,6 @@
     "eslint-plugin-storybook": "^0.6.1",
     "eslint-plugin-tailwindcss": "^3.5.2",
     "eslint-plugin-testing-library": "^5.5.1",
-    "eslint-plugin-trim": "^0.3.1",
     "eslint-plugin-typescript-sort-keys": "^2.1.0",
     "husky": "^8.0.0",
     "jest": "^28.1.1",
